@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Soji</title>
+    <link>https://tavodev.github.io/soji-releases/appcast.xml</link>
+    <description>Actualizaciones de Soji</description>
+    <language>es</language>
+    <!-- Sin <item> todavía: no hay actualizaciones. `make release` lo reescribe en cada versión. -->
+  </channel>
+</rss>
