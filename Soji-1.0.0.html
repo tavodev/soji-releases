@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 13px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    margin: 14px 16px; color: #1d1d1f;
+  }
+  h1 { font-size: 17px; margin: 0 0 2px; }
+  .sub { color: #6e6e73; margin: 0 0 14px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: #6e6e73; margin: 16px 0 6px; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin: 4px 0; }
+  .note { margin-top: 16px; padding: 10px 12px; background: rgba(10,99,230,.08);
+          border-radius: 8px; color: #0a4fb0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    .sub, h2 { color: #98989d; }
+    .note { background: rgba(77,157,255,.14); color: #9cc4ff; }
+  }
+</style>
+</head>
+<body>
+  <h1>Soji 1.0</h1>
+  <p class="sub">Primera versión. Limpieza de disco para macOS: segura, reversible y transparente.</p>
+
+  <h2>Lo que hace</h2>
+  <ul>
+    <li><b>Libera espacio sin riesgo:</b> cachés, temporales, instaladores viejos, duplicados, restos
+        de apps desinstaladas y más. Todo va a la <b>Papelera</b> (con <b>Deshacer</b>), nunca borrado directo.</li>
+    <li><b>Analizar todo:</b> revisa todas las áreas de una vez y limpia lo seguro con un clic.</li>
+    <li><b>Mapa del disco:</b> un treemap navegable para ver qué ocupa tu espacio.</li>
+    <li><b>Para desarrolladores:</b> artefactos de proyectos (node_modules, target, .venv…) y cachés de
+        herramientas, sin tocar tu código ni tus configuraciones.</li>
+    <li><b>Widget en la barra de menús:</b> espacio del disco y «Analizar todo» sin abrir la ventana.</li>
+    <li><b>Se actualiza sola:</b> comprueba e instala nuevas versiones automáticamente.</li>
+  </ul>
+
+  <p class="note">Soji es conservador por diseño: nunca toca el Llavero, iCloud, Mail, claves SSH ni
+  archivos del sistema, y todo lo que borra es reversible.</p>
+</body>
+</html>

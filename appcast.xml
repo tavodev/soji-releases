@@ -1,10 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Soji</title>
-    <link>https://tavodev.github.io/soji-releases/appcast.xml</link>
-    <description>Actualizaciones de Soji</description>
-    <language>es</language>
-    <!-- Sin <item> todavía: no hay actualizaciones. `make release` lo reescribe en cada versión. -->
-  </channel>
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Soji</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Sun, 14 Jun 2026 14:20:10 -0600</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://tavodev.github.io/soji-releases/Soji-1.0.0.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/tavodev/soji-releases/releases/download/v1.0.0/Soji-1.0.0.zip" length="2780506" type="application/octet-stream" sparkle:edSignature="vV1rrI87+wI4fgFqnt7/sM+BEKf8jmS1+wiDUxO2TvtRwHymCdCFSlOr4kJYCEmaN93sBQrVZH0sq2Hzeao8Ag=="/>
+        </item>
+    </channel>
 </rss>
