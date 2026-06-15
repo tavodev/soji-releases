@@ -12,6 +12,10 @@
   <img src="https://img.shields.io/badge/auto--update-Sparkle-7d4cdb" alt="Sparkle">
 </p>
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="Soji — Analizar todo" width="820">
+</p>
+
 ---
 
 ## ⬇️ Descargar
