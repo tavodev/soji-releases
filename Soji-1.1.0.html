@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 13px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    margin: 14px 16px; color: #1d1d1f;
+  }
+  h1 { font-size: 17px; margin: 0 0 2px; }
+  .sub { color: #6e6e73; margin: 0 0 14px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: #6e6e73; margin: 16px 0 6px; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin: 4px 0; }
+  .note { margin-top: 16px; padding: 10px 12px; background: rgba(10,99,230,.08);
+          border-radius: 8px; color: #0a4fb0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    .sub, h2 { color: #98989d; }
+    .note { background: rgba(77,157,255,.14); color: #9cc4ff; }
+  }
+</style>
+</head>
+<body>
+  <h1>Soji 1.1</h1>
+  <p class="sub">Ve por fin lo que de verdad ocupa tu disco de desarrollo: modelos de IA, Docker, simuladores, Android… y más rápido.</p>
+
+  <h2>Novedades</h2>
+  <ul>
+    <li><b>Modelos de IA</b> (nuevo módulo, sección Desarrollo): pesos descargados de Hugging Face, LM Studio, Ollama y ComfyUI, con tamaño y fecha por modelo. Nada viene marcado; eliges tú y todo va a la Papelera.</li>
+    <li><b>Qué ocupa Docker</b>: el item de Docker se despliega con cada imagen y volumen grande (indicando si está en uso o el comando exacto para quitarlo), contenedores y caché de build con lo recuperable.</li>
+    <li><b>Simuladores, archivos de Xcode y Android</b> también se desglosan: cada simulador con su runtime y si sigue disponible, cada <code>.xcarchive</code> con su fecha, cada emulador Android y cada imagen de sistema indicando qué emulador la usa.</li>
+    <li><b>Copiar comando</b>: las filas informativas tienen un botón para copiar al portapapeles el comando sugerido.</li>
+    <li><b>Apps que no usas</b>: el Desinstalador separa las apps «Sin abrir en más de 6 meses» de las usadas recientemente.</li>
+    <li><b>Más cachés de desarrollo</b>: uv, pip, Homebrew, JetBrains, GitHub Copilot, Playwright y Puppeteer (sin marcar: se re-descargan).</li>
+    <li><b>Mapa del disco</b>: carga bajo demanda de los niveles profundos (menos memoria en discos enormes) con indicador «Cargando carpeta…».</li>
+  </ul>
+
+  <h2>Rendimiento</h2>
+  <ul>
+    <li>Archivos grandes y duplicados recorre el disco usando todos los núcleos y hashea en paralelo de verdad.</li>
+    <li>Desinstalador en paralelo; una llamada al sistema menos por cada archivo visitado; listados grandes fluidos al hacer scroll; el treemap ya no recalcula el layout al mover el ratón.</li>
+  </ul>
+
+  <h2>Corregido</h2>
+  <ul>
+    <li><b>Artefactos de proyectos</b> siempre decía «Todo limpio» si guardas el código en <code>~/Documents/dev</code> o <code>~/Desktop</code>: ahora también busca ahí y, si no hay ninguna carpeta de proyectos, lo dice y ofrece abrir Ajustes.</li>
+    <li>Mapa del disco: navegar dentro de «Otros» ya no te expulsa al borrar o deshacer.</li>
+  </ul>
+
+  <p class="note">Como siempre: todo lo que Soji borra va a la Papelera y se puede deshacer; lo que no puede gestionar de forma segura solo se muestra, con el comando para hacerlo tú.</p>
+</body>
+</html>
