@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 13px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    margin: 14px 16px; color: #1d1d1f;
+  }
+  h1 { font-size: 17px; margin: 0 0 2px; }
+  .sub { color: #6e6e73; margin: 0 0 14px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: #6e6e73; margin: 16px 0 6px; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin: 4px 0; }
+  .note { margin-top: 16px; padding: 10px 12px; background: rgba(10,99,230,.08);
+          border-radius: 8px; color: #0a4fb0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    .sub, h2 { color: #98989d; }
+    .note { background: rgba(77,157,255,.14); color: #9cc4ff; }
+  }
+</style>
+</head>
+<body>
+  <h1>Soji 1.2</h1>
+  <p class="sub">Mucho más rápida: el segundo «Analizar todo» pasa de unos 25 segundos a uno o dos, y lo que no puedes limpiar a mano por fin se ve en el resumen.</p>
+
+  <h2>Novedades</h2>
+  <ul>
+    <li><b>«Podrías recuperar a mano»</b> en Analizar todo: resume lo que Soji no limpia por sí solo (Docker, simuladores, Android, modelos de IA, proyectos inactivos, apps sin abrir) con su tamaño y un botón «Ver».</li>
+    <li><b>«Sin abrir desde hace…»</b> en Archivos grandes/duplicados y Descargas viejas, con un orden nuevo «Sin abrir desde hace más tiempo».</li>
+    <li><b>Historial de espacio liberado</b>: «Has liberado X GB con Soji desde el…» en el panel de inicio y en «Acerca de Soji».</li>
+    <li><b>Resultado anterior al instante</b>: al abrir un módulo o Analizar todo ves el último resultado con «Actualizando…» mientras se vuelve a analizar (no se puede limpiar hasta que llega el nuevo).</li>
+  </ul>
+
+  <h2>Rendimiento</h2>
+  <ul>
+    <li><b>Índice de tamaños</b>: Soji recuerda cuánto ocupa cada carpeta y solo vuelve a medir lo que ha cambiado desde la última vez. El primer análisis tarda lo de siempre; los siguientes, uno o dos segundos.</li>
+    <li>Nuevo motor de lectura de disco (varias veces más rápido), análisis en paralelo que muestra cada área en cuanto termina, y búsqueda de proyectos compartida entre módulos.</li>
+    <li><b>Mapa del disco</b> completo en memoria: entrar en carpetas profundas ya no vuelve a analizar el disco.</li>
+    <li>Listas enormes fluidas: con 100.000 elementos aparecen en una décima de segundo y marcar una casilla es instantáneo.</li>
+    <li>Duplicados por etapas con comparación byte a byte final, sin llenar la caché del sistema.</li>
+  </ul>
+
+  <h2>Corregido</h2>
+  <ul>
+    <li><b>Clones APFS</b>: ya no se presentan como duplicados que liberan todo su tamaño; muestran lo que liberan de verdad y no vienen marcados si es casi nada.</li>
+    <li>Los archivos con varios enlaces duros se contaban varias veces (carpetas infladas en el Mapa del disco y «duplicados» de sí mismos).</li>
+    <li>Un módulo podía seguir mostrando elementos ya movidos a la Papelera desde Analizar todo; cancelar una operación ya no pierde «Deshacer».</li>
+  </ul>
+
+  <p class="note">Como siempre: todo lo que Soji borra va a la Papelera y se puede deshacer. El índice de tamaños solo sirve para mostrar cifras: nunca decide qué se borra.</p>
+</body>
+</html>
