@@ -3,13 +3,13 @@
     <channel>
         <title>Soji</title>
         <item>
-            <title>1.2.0</title>
-            <pubDate>Sat, 26 Sep 2026 21:11:45 -0600</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <title>1.3.0</title>
+            <pubDate>Mon, 12 Oct 2026 07:13:05 -0600</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://tavodev.github.io/soji-releases/Soji-1.2.0.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/tavodev/soji-releases/releases/download/v1.2.0/Soji-1.2.0.zip" length="4106029" type="application/octet-stream" sparkle:edSignature="rAWTcST989+LZKayTwFibDeWkz4XPi+e78N5W8RC8gHuyKli4AQ9qdu6T8fC2DEz0kKEy72B7CF/Cj6YY4oGBg=="/>
+            <sparkle:releaseNotesLink>https://tavodev.github.io/soji-releases/Soji-1.3.0.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/tavodev/soji-releases/releases/download/v1.3.0/Soji-1.3.0.zip" length="4143013" type="application/octet-stream" sparkle:edSignature="jqagOm+3/C5KuLEh2SaducAeTVj95MU4VwCsv2X54lXJKDcoP1U2Ney6DKI3jCmDZ4L+7lfzEXNi2LgkcajrBg=="/>
         </item>
     </channel>
 </rss>
