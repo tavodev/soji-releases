@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 13px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    margin: 14px 16px; color: #1d1d1f;
+  }
+  h1 { font-size: 17px; margin: 0 0 2px; }
+  .sub { color: #6e6e73; margin: 0 0 14px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: #6e6e73; margin: 16px 0 6px; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin: 4px 0; }
+  hr { border: 0; border-top: 1px solid rgba(128,128,128,.25); margin: 20px 0 14px; }
+  .note { margin-top: 16px; padding: 10px 12px; background: rgba(10,99,230,.08);
+          border-radius: 8px; color: #0a4fb0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    .sub, h2 { color: #98989d; }
+    .note { background: rgba(77,157,255,.14); color: #9cc4ff; }
+  }
+</style>
+</head>
+<body>
+  <h1>Soji 1.4</h1>
+  <p class="sub">Soji habla inglés, funciona con VoiceOver y puede abrirse al iniciar sesión.</p>
+
+  <h2>Novedades</h2>
+  <ul>
+    <li><b>Soji en inglés</b>: toda la app está traducida. Se muestra en inglés en un Mac en inglés (y en cualquier idioma que no sea el español).</li>
+    <li><b>Abrir Soji al iniciar sesión</b> (Ajustes → General): Soji arranca en la barra de menús sin poner la ventana delante.</li>
+    <li><b>VoiceOver</b>: el Mapa del disco se recorre bloque a bloque, el gráfico de tipos se lee como resumen, cada fila es un solo elemento con sus acciones y el estado del disco se lee como una frase.</li>
+    <li><b>Microsoft Edge y Brave</b> en Privacidad y navegadores, con caché, historial y cookies por perfil.</li>
+    <li><b>Una fila por versión</b> de Node (nvm), Rust (rustup) y Python (pyenv) en Otras áreas grandes, con su tamaño y el comando exacto para quitarla.</li>
+    <li><b>Ayuda → Exportar diagnóstico…</b>: un informe de texto, revisable antes de enviarlo, para pedir soporte.</li>
+  </ul>
+
+  <h2>Corregido</h2>
+  <ul>
+    <li>El comando sugerido para quitar una imagen de Docker sin etiqueta usa su ID.</li>
+    <li>Los ajustes de antigüedad mostraban un marcado extraño en vez de «30 días».</li>
+    <li>Concordancias en español («3 elementos seguros», «cada minuto»…).</li>
+    <li>Al analizar otra carpeta en el Mapa del disco, la ruta muestra su nombre en vez de «Inicio».</li>
+  </ul>
+
+  <hr>
+
+  <h1 lang="en">Soji 1.4</h1>
+  <p class="sub" lang="en">Soji now speaks English, works with VoiceOver and can open at login.</p>
+
+  <h2 lang="en">What’s new</h2>
+  <ul lang="en">
+    <li><b>Soji in English</b>: the whole app is translated. It shows in English on a Mac set to English (or to any language other than Spanish).</li>
+    <li><b>Open Soji at login</b> (Settings → General): Soji starts in the menu bar without bringing its window to the front.</li>
+    <li><b>VoiceOver</b>: the Disk Map can be explored block by block, the file-type chart reads as a summary, each row is a single element with its actions, and disk status reads as one sentence.</li>
+    <li><b>Microsoft Edge and Brave</b> in Privacy &amp; Browsers, with cache, history and cookies per profile.</li>
+    <li><b>One row per version</b> of Node (nvm), Rust (rustup) and Python (pyenv) in Other Large Areas, with its size and the exact command to remove it.</li>
+    <li><b>Help → Export Diagnostics…</b>: a text report, reviewable before sending, for support requests.</li>
+  </ul>
+
+  <h2 lang="en">Fixed</h2>
+  <ul lang="en">
+    <li>The suggested command to remove an untagged Docker image now uses its ID.</li>
+    <li>The age settings showed odd markup instead of “30 days”.</li>
+    <li>When scanning another folder in the Disk Map, the path shows its name instead of “Home”.</li>
+  </ul>
+
+  <p class="note">Como siempre, todo lo que Soji borra va a la Papelera y se puede deshacer. · As always, everything Soji removes goes to the Trash and can be undone.</p>
+</body>
+</html>
